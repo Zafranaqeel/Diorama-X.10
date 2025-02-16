@@ -18,7 +18,6 @@ header .logo {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 header .logo img {
@@ -37,7 +36,7 @@ header .navbar {
     justify-content: center; /* Menjadikan menu navigasi rata tengah */
     gap: 20px;
     background-color: #155E95;
-    padding: 10px;
+    padding: 20px 15px;
     width: 100%;
     list-style: none;
 }
@@ -47,6 +46,11 @@ header .navbar a {
     color: #EAE2C6;
     font-weight: bold;
     padding: 5px 10px;
+}
+
+header .navbar a:hover{
+    border-bottom:2px solid #EAE2C6;
+    transition: ease-in 2s;
 }
 
 .Cirebon{
@@ -106,4 +110,48 @@ header .navbar a {
 .Mega-Mendung img{
     width:450px;
     margin-top:50px;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        overflow-x:hidden;
+    }
+    header{
+        width:100%;
+    }
+    header .logo img{
+        display: none;
+    }
+    header .logo h1 {
+        padding:5px;
+        font-size:180%;
+    }
+    header .navbar{
+        display:none;
+    }
+    .Cirebon{
+        display:flex;
+        flex-direction:column;
+        gap:5px;
+    }
+    .Cirebon h2, .Cirebon p{
+        margin:5px 15px;
+    }
+    .Gedung-Negara, .Patung-Udang, .Mega-Mendung{
+        display:flex;
+        flex-direction:column-reverse;
+        gap:5px;
+        margin-top:25px;
+        justify-content:center;
+    }
+    .Gedung-Negara div h2, .Patung-Udang div h2, .Mega-Mendung div h2{
+        display:none;
+    }
+    .Gedung-Negara h2, .Gedung-Negara p, .Patung-Udang h2, .Patung-Udang p, .Mega-Mendung h2, .Mega-Mendung p{
+        margin:10px 15px;
+    }
+    .Gedung-Negara img, .Patung-Udang img, .Mega-Mendung img{
+        width:95%;
+        margin:auto;
+    }
 }
