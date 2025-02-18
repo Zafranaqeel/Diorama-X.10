@@ -1,58 +1,44 @@
 body {
-    background-color: #27445D;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    background-color:#27445D;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
 }
-
 header {
-    background-color: #001F3F;
-    display: flex;
-    flex-direction: column; /* Agar navbar tetap di bawah logo */
-    align-items: center;
-    padding: 0;
+    background-color:#001F3F;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:0;
 }
-
 header .logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
 }
-
 header .logo img {
-    width: 100px;
-    margin: 15px 75px;
+    width:100px;
+    margin:15px 75px;
 }
-
 header .logo h1 {
-    text-align: center;
-    color: #EAE2C6;
-    margin: 0;
+    text-align:center;
+    color:#EAE2C6;
+    margin:0;
 }
-
-header .navbar {
-    display: flex; /* Membuat navbar tetap horizontal */
-    justify-content: center; /* Menjadikan menu navigasi rata tengah */
-    gap: 20px;
-    background-color: #155E95;
-    padding: 20px 15px;
-    width: 100%;
-    list-style: none;
+.Proses{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
-
-header .navbar a {
-    text-decoration: none;
-    color: #EAE2C6;
-    font-weight: bold;
-    padding: 5px 10px;
+.Proses h1{
+    text-align:center;
+    color:#EAE2C6;
 }
-
-header .navbar a:hover{
-    border-bottom:2px solid #EAE2C6;
-    transition: ease-in 2s;
+.Proses video{
+    width:50%;
+    margin:auto;
 }
-
 .Cirebon{
     display:grid;
     grid-template-columns:repeat(2,40% 60%);
@@ -65,53 +51,21 @@ header .navbar a:hover{
     margin:15px 30px;
     margin-bottom:30px;
 }
-.Gedung-Negara{
+.Gedung-Negara, .Patung-Udang, .Mega-Mendung, .Makanan1, .Makanan2{
     display:grid;
     grid-template-columns:repeat(2,60% 40%);
     gap:10px;
 }
-.Gedung-Negara h2, .Gedung-Negara p{
+.Gedung-Negara h2, .Gedung-Negara p, .Patung-Udang h2, .Patung-Udang p, .Mega-Mendung h2, .Mega-Mendung p, .Makanan1 h2, .Makanan1 p, .Makanan2 h2, .Makanan2 p{
     text-align:justify;
     color:#EAE2C6;
     font-weight:bold;
     margin:15px 30px;
 }
-.Gedung-Negara img{
+.Gedung-Negara img, .Patung-Udang img, .Mega-Mendung img, .Makanan1 img, .Makanan2 img{
     width:450px;
     margin-top:50px;
 }
-.Patung-Udang{
-    display:grid;
-    grid-template-columns:repeat(2,60% 40%);
-    grid-template-rows:auto;
-    gap:10px;
-}
-.Patung-Udang h2, .Patung-Udang p{
-    text-align:justify;
-    color:#EAE2C6;
-    font-weight:bold;
-    margin:15px 30px;
-}
-.Patung-Udang img{
-    width:450px;
-    margin-top:50px;
-}
-.Mega-Mendung{
-    display:grid;
-    grid-template-columns:repeat(2,60% 40%);
-    gap:10px;
-}
-.Mega-Mendung h2, .Mega-Mendung p{
-    text-align:justify;
-    color:#EAE2C6;
-    font-weight:bold;
-    margin:15px 30px;
-}
-.Mega-Mendung img{
-    width:450px;
-    margin-top:50px;
-}
-
 @media only screen and (max-width: 600px) {
     body{
         overflow-x:hidden;
@@ -137,20 +91,20 @@ header .navbar a:hover{
     .Cirebon h2, .Cirebon p{
         margin:5px 15px;
     }
-    .Gedung-Negara, .Patung-Udang, .Mega-Mendung{
+    .Gedung-Negara, .Patung-Udang, .Mega-Mendung, .Makanan1, .Makanan2{
         display:flex;
         flex-direction:column-reverse;
         gap:5px;
         margin-top:25px;
         justify-content:center;
     }
-    .Gedung-Negara div h2, .Patung-Udang div h2, .Mega-Mendung div h2{
+    .Gedung-Negara div h2, .Patung-Udang div h2, .Mega-Mendung div h2, .Makanan1 div h2, .Makanan2 div h2{
         display:none;
     }
-    .Gedung-Negara h2, .Gedung-Negara p, .Patung-Udang h2, .Patung-Udang p, .Mega-Mendung h2, .Mega-Mendung p{
+    .Gedung-Negara h2, .Gedung-Negara p, .Patung-Udang h2, .Patung-Udang p, .Mega-Mendung h2, .Mega-Mendung p, .Makanan1 h2, .Makanan1 p, .Makanan2 h2, .Makanan2 p{
         margin:10px 15px;
     }
-    .Gedung-Negara img, .Patung-Udang img, .Mega-Mendung img{
+    .Gedung-Negara img, .Patung-Udang img, .Mega-Mendung img, .Makanan1 img, .Makanan2 img{
         width:95%;
         margin:auto;
     }
