@@ -80,9 +80,20 @@ header .logo h1 {
         padding:5px;
         font-size:180%;
     }
-    header .navbar{
-        display:none;
+    .Proses{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
     }
+    .Proses h1{
+        text-align:center;
+        color:#EAE2C6;
+        font-size:150%;
+    }
+    .Proses video{
+        width:75%;
+        margin:auto;
+    }    
     .Cirebon{
         display:flex;
         flex-direction:column;
